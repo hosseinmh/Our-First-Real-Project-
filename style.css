@@ -1,0 +1,12 @@
+body
+{
+  margin: 0;
+}
+.navBar
+{
+  position: fixed;
+  background-color: black;
+  width: 7vw;
+  height: 100vh;
+  right: 0;
+}
