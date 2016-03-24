@@ -6,7 +6,46 @@ body
 {
   position: fixed;
   background-color: black;
-  width: 7vw;
+  width: 4vw;
   height: 100vh;
   right: 0;
+  padding: 1vh 1vw;
+}
+object
+{
+  width: 4vw;
+}
+#filter
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#filter:hover
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill:red;
+}
+#new
+{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact
+{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#arrow
+{
+  position: absolute;
+  display: none;
 }
