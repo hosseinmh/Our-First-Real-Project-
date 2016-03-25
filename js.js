@@ -2,15 +2,11 @@ $('.navBar').on('mouseover',function()
 {
   $(this).animate({
     width:'20vw'
-  },'fast','swing',function(){});
-  $('#filter').css({
-    'position':'relative',
-    'float':'left'
-  });
+  },300,'swing',function(){});
 });
 $('.navBar').on('mouseout',function()
 {
   $(this).animate({
     width:'4vw'
-  },'fast','swing',function(){});
+  },200,'swing',function(){});
 });
