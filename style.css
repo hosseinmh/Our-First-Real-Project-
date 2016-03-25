@@ -16,35 +16,41 @@ body
 {
   transition-duration:.3s;
 }
+.navBarIcons
+{
+  width: 4vw;
+  height: 4vw;
+}
 svg
 {
   width: 4vw;
   height: 4vw;
-  pointer-events: none;
 }
 #filter
 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top:50%;
+  right: 1vw;
+  transform: translate(0,-50%);
 }
 #new
 {
   position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top:35%;
+  right: 1vw;
+  transform: translate(0,-50%);
 }
 #contact
 {
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top:65%;
+  right: 1vw;
+  transform: translate(0,-50%);
 }
 #arrow
 {
   position: absolute;
+  right: 1vw;
+  transform: translate(0,-50%);
   display: none;
 }
