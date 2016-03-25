@@ -11,7 +11,7 @@ body
   right: 0;
   padding: 1vh 1vw;
 }
-object
+object,img
 {
   width: 4vw;
 }
@@ -21,14 +21,6 @@ object
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-#filter:hover
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill:red;
 }
 #new
 {

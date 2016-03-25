@@ -1,0 +1,16 @@
+$('.navBar').on('mouseover',function()
+{
+  $(this).animate({
+    width:'20vw'
+  },'fast','swing',function(){});
+  $('#filter').css({
+    'position':'relative',
+    'float':'left'
+  });
+});
+$('.navBar').on('mouseout',function()
+{
+  $(this).animate({
+    width:'4vw'
+  },'fast','swing',function(){});
+});
