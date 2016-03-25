@@ -1,10 +1,10 @@
-$('.navBar').on('mouseover',function()
+$('.navBar').on('mouseenter',function()
 {
   $(this).animate({
     width:'20vw'
   },300,'swing',function(){});
 });
-$('.navBar').on('mouseout',function()
+$('.navBar').on('mouseleave',function()
 {
   $(this).animate({
     width:'4vw'
