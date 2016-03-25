@@ -12,9 +12,14 @@ body
   right: 0;
   padding: 1vh 1vw;
 }
-object
+.navBarIcons path
+{
+  transition-duration:.3s;
+}
+svg
 {
   width: 4vw;
+  height: 4vw;
   pointer-events: none;
 }
 #filter

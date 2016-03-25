@@ -10,3 +10,13 @@ $('.navBar').on('mouseleave',function()
     width:'4vw'
   },200,'swing',function(){});
 });
+$('.navBarIcons').mouseover(function()
+  {
+    $(this).children().children().css('fill','#FCA311');
+  }
+);
+$('.navBarIcons').mouseout(function()
+  {
+    $(this).children().children().css('fill','white');
+  }
+);
