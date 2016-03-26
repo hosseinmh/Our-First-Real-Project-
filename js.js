@@ -1,7 +1,7 @@
 $('.navBar').on('mouseenter',function()
 {
   $(this).animate({
-    width:'20vw'
+    width:'24vw'
   },300,'swing',function(){});
 });
 $('.navBar').on('mouseleave',function()
@@ -13,10 +13,12 @@ $('.navBar').on('mouseleave',function()
 $('.navBarIcons').mouseover(function()
   {
     $(this).children().children().css('fill','#FCA311');
+    $(this).children(":last").css('color','#FCA311');
   }
 );
 $('.navBarIcons').mouseout(function()
   {
     $(this).children().children().css('fill','white');
+    $(this).children(":last").css('color','white');
   }
 );
