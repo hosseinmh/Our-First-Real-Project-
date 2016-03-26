@@ -1,6 +1,6 @@
 @font-face
 {
-  font-family:"yekan";
+  font-family:"rezvan";
   src:url('../fonts/Rezvan.ttf');
 }
 body
@@ -74,5 +74,5 @@ p.navBarText
   color: white;
   float: right;
   transition-duration:.3s;
-  font-family: yekan;
+  font-family: rezvan;
 }
