@@ -7,6 +7,7 @@ body
 {
   margin: 0;
   background-color: black;
+  height: 200vh;
 }
 .navBar
 {
@@ -17,7 +18,7 @@ body
   right: 0;
   padding: 1vh 1vw;
 }
-.navBarIcons path
+.navBarIcons *
 {
   transition-duration:.3s;
 }
@@ -59,9 +60,10 @@ svg
 #arrow
 {
   position: absolute;
+  top:100%;
   right: 1vw;
   transform: translate(0,-50%);
-  display: none;
+  cursor:pointer;
 }
 p.navBarText
 {
