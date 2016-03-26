@@ -1,7 +1,7 @@
 $('.navBar').on('mouseenter',function()
 {
   $(this).animate({
-    width:'24vw'
+    width:'21vw'
   },300,'swing',function(){});
 });
 $('.navBar').on('mouseleave',function()
