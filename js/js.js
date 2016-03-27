@@ -58,6 +58,11 @@ $(window).on('scroll',function()
 );
 $('#arrow').on('click',function()
   {
-    $('html ,body').animate({scrollTop : 0},500,'easeInBack');
+    var animTime=$(window).scrollTop();
+    if(animTime<400)
+      animTime=400;
+    if(animTime>800)
+      animTime=800;
+    $('html ,body').animate({scrollTop : 0},animTime,'easeInBack');
   }
 );
