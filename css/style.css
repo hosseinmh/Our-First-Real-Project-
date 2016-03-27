@@ -32,12 +32,13 @@ svg
   float: right;
   width: 4vw;
   height: 4vw;
+  padding-right: 1vw;
 }
 #filter
 {
   position: absolute;
   top:50%;
-  right: 1vw;
+  right: 0vw;
   transform: translate(0,-50%);
   overflow: hidden;
 }
@@ -45,7 +46,7 @@ svg
 {
   position: absolute;
   top:35%;
-  right: 1vw;
+  right: 0vw;
   transform: translate(0,-50%);
   overflow: hidden;
 }
@@ -53,7 +54,7 @@ svg
 {
   position: absolute;
   top:65%;
-  right: 1vw;
+  right: 0vw;
   transform: translate(0,-50%);
   overflow: hidden;
 }
@@ -61,7 +62,7 @@ svg
 {
   position: absolute;
   top:100%;
-  right: 1vw;
+  right: 0vw;
   transform: translate(0,-50%);
   cursor:pointer;
 }

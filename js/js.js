@@ -10,13 +10,13 @@ $('.navBar').on('mouseleave',function()
     width:'4vw'
   },400,'easeOutExpo',function(){});
 });
-$('.navBarIcons').on('mouseover',function()
+$('.navBarIcons').on('mouseenter',function()
   {
     $(this).children().children().css('fill','#FCA311');
     $(this).children(":last").css('color','#FCA311');
   }
 );
-$('.navBarIcons').on('mouseout',function()
+$('.navBarIcons').on('mouseleave',function()
   {
     $(this).children().children().css('fill','white');
     $(this).children(":last").css('color','white');
