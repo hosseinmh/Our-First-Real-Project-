@@ -1,14 +1,30 @@
+var timePassed;
 $('.navBar').on('mouseenter',function()
 {
-  $(this).animate({
-    width:'21vw'
-  },200,'easeInExpo',function(){});
+  if(!timePassed)
+  {
+    timePassed=window.setTimeout(function(){
+      timePassed=null;
+      $('.navBar').animate({
+      width:'21vw'
+      },200,'easeInExpo',function(){});
+    },500);
+  }
 });
 $('.navBar').on('mouseleave',function()
 {
-  $(this).animate({
+  if(!timePassed)
+  {
+    $('.navBar').animate({
     width:'4vw'
-  },400,'easeOutExpo',function(){});
+    },400,'easeOutExpo',function(){});
+  }
+  else
+  {
+    window.clearTimeout(timePassed);
+    timePassed=null;
+  }
+  
 });
 $('.navBarIcons').on('mouseenter',function()
   {
