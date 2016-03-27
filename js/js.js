@@ -1,22 +1,38 @@
+var timePassed;
 $('.navBar').on('mouseenter',function()
 {
-  $(this).animate({
-    width:'21vw'
-  },200,'easeInExpo',function(){});
+  if(!timePassed)
+  {
+    timePassed=window.setTimeout(function(){
+      timePassed=null;
+      $('.navBar').animate({
+      width:'21vw'
+      },200,'easeInExpo',function(){});
+    },500);
+  }
 });
 $('.navBar').on('mouseleave',function()
 {
-  $(this).animate({
+  if(!timePassed)
+  {
+    $('.navBar').animate({
     width:'4vw'
-  },400,'easeOutExpo',function(){});
+    },400,'easeOutExpo',function(){});
+  }
+  else
+  {
+    window.clearTimeout(timePassed);
+    timePassed=null;
+  }
+  
 });
-$('.navBarIcons').on('mouseover',function()
+$('.navBarIcons').on('mouseenter',function()
   {
     $(this).children().children().css('fill','#FCA311');
     $(this).children(":last").css('color','#FCA311');
   }
 );
-$('.navBarIcons').on('mouseout',function()
+$('.navBarIcons').on('mouseleave',function()
   {
     $(this).children().children().css('fill','white');
     $(this).children(":last").css('color','white');
