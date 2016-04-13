@@ -6,7 +6,8 @@ $('.navBar').on('mouseenter',function()
     timePassed=window.setTimeout(function(){
       timePassed=null;
       $('.navBar').animate({
-      width:'21vw'
+      width:'21vw',
+      opacity:'1'
       },200,'easeInExpo',function(){});
     },500);
   }
@@ -16,7 +17,8 @@ $('.navBar').on('mouseleave',function()
   if(!timePassed)
   {
     $('.navBar').animate({
-    width:'4vw'
+    width:'4vw',
+    opacity:'.5'
     },400,'easeOutExpo',function(){});
   }
   else
